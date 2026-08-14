@@ -1,11 +1,7 @@
 services:
   - type: web
     name: TextingApp
-    runtime: image
-    image: ://microsoft.com
-    buildCommand: dotnet publish -c Release -o output
-    startCommand: dotnet output/SimpleChatApp.dll
+    runtime: docker
+    repo: https://github.com
     plan: free
-    envVars:
-      - key: PORT
-        value: 10000
+
