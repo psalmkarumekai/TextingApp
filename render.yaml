@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: simple-chat-app
+    name: TextingApp
     runtime: image
     image: ://microsoft.com
     buildCommand: dotnet publish -c Release -o output
